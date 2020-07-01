@@ -1,7 +1,8 @@
 const express = require("express");
 const { uuid, isUuid } = require("uuidv4");
 const app = express();
-
+const cors = require("cors");
+app.use(cors());
 app.use(express.json());
 //rota Get
 // resquest = armazena as informações do usuário, ex: nome, email ...
